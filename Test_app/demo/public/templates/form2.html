@@ -1,0 +1,64 @@
+<div class="alert alert-success alert-dismissable" ng-show="alertAppear">
+    <button ng-click="customReset()" type="button" class="close" aria-hidden="true">&times;</button>
+    <strong>Success</strong> Your username: {{username}},email: {{email}} , password: {{password}}, location {{location}} .
+</div>
+<div class="spinner">
+    <span us-spinner="{radius:30, width:8, length: 35}" spinner-key="spinner-1"></span>
+</div>
+<form class="form-horizontal" ng-hide="formHide">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Form2</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput1">Username</label>
+            <div class="col-md-8">
+                <input id="textinput1" name="textinput" type="text" placeholder="your name" class="form-control input-md" required=""
+                       ng-model="username">
+
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput2">Email</label>
+            <div class="col-md-8">
+                <input id="textinput2" name="textinput" type="text" placeholder="your@mail.com" class="form-control input-md" required=""
+                       ng-model="email">
+
+            </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="passwordinput">Password</label>
+            <div class="col-md-8">
+                <input id="passwordinput" name="passwordinput" type="password" placeholder="your password" class="form-control input-md" required=""
+                       ng-model="password">
+
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="selectbasic">Location</label>
+            <div class="col-md-8">
+                <select id="selectbasic" name="selectbasic" class="form-control" ng-model="location">
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="customLoad()">OK</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,23 @@
+<form class="form-horizontal" enctype="multipart/form-data" method="post">
+    <legend>Form3(upload image)</legend>
+    <fieldset>
+
+        <!-- Form Name -->
+
+        <!-- File Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="filebutton">Upload image</label>
+
+            <div class="col-md-4">
+                <input id="filebutton" name="image" class="input-file" type="file" ng-file-select="onFileSelect($files)"
+                       multiple>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="form-group box">
+    <ul class="list-group image-list">
+        <li class="list-group-item col-sm-1" ng-repeat="image in images"><img ng-src="{{image}}"></li>
+    </ul>
+</div>

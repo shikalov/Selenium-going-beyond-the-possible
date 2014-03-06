@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/bower_components/bootstrap-css/css/bootstrap.css'/>
+    <link rel="stylesheet" href="/bower_components/bootstrap-css/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/bower_components/ngprogress/ngProgress.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/bower_components/ng-file-upload/angular-file-upload-html5-shim.js"></script>
+    <script src="/lib/angularjs/angular.js"></script>
+    <script src="/lib/angular-ui-router/angular-ui-router.js"></script>
+    <script src="/bower_components/jquery/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+    <script src="/bower_components/ngprogress/build/ngProgress.min.js"></script>
+    <script src="/bower_components/ng-file-upload/angular-file-upload.min.js"></script>
+    <script src="/lib/spinner/spin.min.js"></script>
+    <script src="/lib/spinner/angular-spinner.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/app-states.js"></script>
+    <script src="/javascripts/FormController.js"></script>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Xp conference</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:hover}"
+                    ng-mouseenter="hover = true"
+                    ng-mouseleave="hover = false"><a href="/">Home</a></li>
+                <li ng-class="{active:hover}"
+                    ng-mouseenter="hover = true"
+                    ng-mouseleave="hover = false"><a href="/inner">Inner</a></li>
+                <li ng-class="{active:hover}"
+                    ng-mouseenter="hover = true"
+                    ng-mouseleave="hover = false"><a href="/scroll">Scroll</a></li>
+                <li ng-class="{active:hover}"
+                    ng-mouseenter="hover = true"
+                    ng-mouseleave="hover = false"><a href="/security">Security</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section id="menu" class="container" ng-controller="FormController">
+    <ul class="container nav nav-tabs">
+        <li ng-class="{active:state.name=='FirstForm'}" class="span4 "><a ui-sref="FirstForm">Form1</a></li>
+        <li ng-class="{active:state.name=='SecondForm'}" class="span4 "><a ui-sref="SecondForm">Form2</a></li>
+        <li ng-class="{active:state.name=='ThirdForm'}" class="span4"><a ui-sref="ThirdForm">Form3</a></li>
+    </ul>
+    <section id="form" ui-view>
+
+    </section>
+
+</section>
+<!-- /container -->
+
+
+</body>
+</html>

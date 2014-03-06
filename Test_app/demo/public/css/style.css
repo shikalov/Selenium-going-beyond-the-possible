@@ -1,0 +1,49 @@
+legend, li {
+    text-align: center;
+}
+
+.list-group-item {
+    min-height: 100px;
+    min-width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin-top: 10px;
+    max-height: 88px;
+    max-width: 88px;
+
+}
+.spinner{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    height: 100px;
+    width: 100px;
+    margin: -50px 0 0 -50px;
+}
+.alert{
+    margin-top:10px;
+}
+
+.box{
+    max-height: 200px;
+    border: 1px solid #f5e79e;
+    overflow: auto;
+}
+
+ul.image-list{
+    width: 1200px;
+}
+
+
+.bigImage{
+    height: 3000px;
+    width: 3000px;
+    cursor: pointer;
+
+}
+
+

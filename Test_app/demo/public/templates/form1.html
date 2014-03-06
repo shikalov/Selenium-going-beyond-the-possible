@@ -1,0 +1,81 @@
+<form class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Form1</legend>
+
+        <!-- Prepended checkbox -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="prependedcheckbox">Additional text</label>
+
+            <div class="col-md-8">
+                <div class="input-group">
+      <span class="input-group-addon">
+          <input type="checkbox">
+      </span>
+                    <input id="prependedcheckbox" name="prependedcheckbox" class="form-control" type="text"
+                           placeholder="type anything">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="prependedtext">Additional information</label>
+
+            <div class="col-md-8">
+                <div class="input-group">
+                    <span class="input-group-addon">text:</span>
+                    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="type anything"
+                           type="text">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textarea">Description</label>
+
+            <div class="col-md-4">
+                <textarea class="form-control" id="textarea" name="textarea">Some description</textarea>
+            </div>
+        </div>
+
+        <!-- Multiple Radios (inline) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="radios">Inline Radios</label>
+
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                    1
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input type="radio" name="radios" id="radios-1" value="2">
+                    2
+                </label>
+                <label class="radio-inline" for="radios-2">
+                    <input type="radio" name="radios" id="radios-2" value="3">
+                    3
+                </label>
+                <label class="radio-inline" for="radios-3">
+                    <input type="radio" name="radios" id="radios-3" value="4">
+                    4
+                </label>
+            </div>
+        </div>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="button1id"></label>
+
+            <div class="col-md-8">
+                <button id="button1id" name="button1id" class="btn btn-success">Applay</button>
+                <button id="button2id" name="button2id" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
